@@ -1,5 +1,5 @@
 language: python
 install:
-  - pip install -r Requiremenrs.txt
+  - pip install -r Requirements.txt
 script:
-  - python manage.py test
+  - pytest
