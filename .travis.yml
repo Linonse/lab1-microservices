@@ -1,10 +1,14 @@
 language: python
+
+before_install:
+  - sed '/django-heroku==/d' Requirements.txt > requirements-travis.txt
 install:
-  - pip install -r Requirements.txt
+  - pip install -r requirements-travis.txt
 before_script:
   - python manage.py migrate
 script:
   - python manage.py test blog.tests
+
 deploy:
   provider: heroku
   app: protected-reef-33135
