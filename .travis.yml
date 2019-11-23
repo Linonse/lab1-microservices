@@ -5,3 +5,12 @@ before_script:
   - python manage.py migrate
 script:
   - python manage.py test blog.tests
+deploy:
+  provider: heroku
+  app: protected-reef-33135
+  on:
+    repo: Kulnev/rsoi
+  api_key:
+    secure: "422debd3-0c66-4505-9b1a-2aeb97db4468"
+notifications:
+  email: false
