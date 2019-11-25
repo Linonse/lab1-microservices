@@ -11,9 +11,9 @@ script:
 
 deploy:
   provider: heroku
-  app: protected-reef-33135
+  app: gentle-lake-52001
   on:
-    repo: Kulnev/rsoi
+    repo: Linonse/lab1-microservices
   api_key:
     secure: "422debd3-0c66-4505-9b1a-2aeb97db4468"
 notifications:
