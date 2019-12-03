@@ -15,7 +15,7 @@ class Person(models.Model):
         verbose_name_plural = 'Сотрудники'
 # Create your models here.
 
-class Comin(models.Model):
+'''class Comin(models.Model):
     comin_id = models.Index
     person_id = models.ForeignKey('Person', on_delete=models.CASCADE)
     data = models.DateTimeField(auto_now=False, auto_now_add=False)
@@ -51,3 +51,4 @@ class Department(models.Model):
     class Meta:
         verbose_name = 'Отдел'
         verbose_name_plural = 'Отделы'
+    '''
