@@ -1,6 +1,6 @@
 language: python
 install:
-  - pip install -r requirements.txt
+  - pip install -r Requirements.txt
 before_script:
   - python manage.py migrate
 script:
